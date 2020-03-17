@@ -1,0 +1,28 @@
+body {
+    margin: 0 auto;
+    font-family:palatino,garamond;
+}
+p, li {
+    text-align: justify;
+}
+@media (orientation: landscape) {
+    body {
+        min-width:22em;
+        max-width:33em;
+        padding:1em;
+        font-size:12pt;
+    }
+    p, li {
+        line-height:150%;
+    }
+}
+@media (orientation: portrait) {
+    body {
+        margin: 0 auto;
+        padding: 3em;
+        font-size:10pt;
+    }
+    p, li {
+        line-height: 200%;
+    }
+}

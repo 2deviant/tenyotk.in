@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    background: #222;
+    display: inline-block;
+    font-family:tahoma;
+    font-size: 14pt;
+    left: 0;
+    padding: 1em;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: calc(100% - 2em);
+    z-index:100;
+}
+
+#home a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.divider {
+    background: #222;
+    color: #eee;
+    display: inline-block;
+    font-family: Bitter,Georgia;
+    font-size: 70px;
+    padding: 1em;
+    text-align: center;
+    width: calc(100% - 2em);
+}
+
+#menu {
+    border-bottom:1px solid #000;
+    border-top:1px solid #000;
+    padding:1em;
+}
+
+#menu::before {
+    background: #000;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    border: 1px solid #000;
+    color: #fff;
+    content: "contents";
+    display: block;
+    font-size: 14pt;
+    left: -1em;
+    padding: .25em .5em;
+    position: relative;
+    top: -1em;
+    width: 10em;
+}
+
+#menu a {
+    color: #000;
+    font: bold 12pt verdana;
+    margin: 0 1em;
+    padding:.5em;
+    text-decoration: none;
+}
+
+#menu a::before {
+    content: "- ";
+}
+
+@media (orientation: landscape) {
+    .content {
+        margin: 0 auto;
+        max-width: 33em;
+        min-width: 22em;
+        padding-top: 2em;
+        width: 66%;
+    }
+}
+
+@media (orientation: portrait) {
+    .content {
+        padding: 2em;
+    }
+}
+
+.content {
+    font-family: "Source Sans Pro",Helvetica,sans-serif;
+}
+
+.content p, li {
+    line-height:150%;
+    text-align:justify;
+}
+
+.content h1 {
+    font-family:Bitter,Georgia,serif;
+}
+
+.content h1.underline {
+    border-bottom:2px solid #000;
+}
+
+.content h2.underline {
+    border-bottom:1px dotted #000;
+}
+
+.image {
+    width:100%;
+    text-align:center;
+}
+
+.image img {
+    width:100%;
+}
+
+span.soundbite {
+    font-weight:bold;
+    color:#555;
+    font-size:125%;
+    text-align:center;
+    display:block;
+    margin:1em 0;
+}
+
+span.soundbite::before {
+    font-size:150%;
+    content:"/"
+}
+
+span.soundbite::after {
+    font-size:150%;
+    content:"/"
+}
